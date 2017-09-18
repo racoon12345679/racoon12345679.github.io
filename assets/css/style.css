@@ -1,5 +1,24 @@
 body {
-  font-family: garamond;
-  font-size: 120px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
   line-height: normal;
+  background-color: #e3e6e7;
+}
+
+.name {
+  font-size: 15px;
+  position: fixed;
+  top:10vh;
+  left:8vh;
+}
+
+.navi{
+  position: fixed;
+  top:18vh;
+  left:14vh;
+}
+
+.navi:hover{
+  background-color: blue;
+  left:15vh;
 }

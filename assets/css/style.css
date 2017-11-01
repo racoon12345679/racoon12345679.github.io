@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family:'Raleway', sans-serif;
   font-size: 30px;
   line-height: normal;
   background-color: #dd8f3e;
@@ -30,4 +30,6 @@ a {
 a:hover{
   color:white;
   text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style: dashed;
 }

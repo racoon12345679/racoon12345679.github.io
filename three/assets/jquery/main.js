@@ -23,4 +23,15 @@ $(document).ready(function() {
     $('body').removeClass('fade-out');
 });
 
+/*hover title*/
+$('img.thumb').hover(
+    function(){
+        $(this).css('opacity','.5');
+    },
+    function(){
+        $(this).css('opacity','1');
+    }
+);
+
+
 });

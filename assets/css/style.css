@@ -1,24 +1,33 @@
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
+  font-family: Arial;
+  font-size: 30px;
   line-height: normal;
-  background-color: #e3e6e7;
+  background-color: #dd8f3e;
 }
 
-.name {
-  font-size: 15px;
+.titleright {
+  font-size: 30px;
   position: fixed;
-  top:10vh;
-  left:8vh;
+  align:right;
+  top:2vh;
+  left:110vh;
 }
 
 .navi{
   position: fixed;
-  top:18vh;
-  left:14vh;
+  top:2vh;
+  left:4vh;
 }
 
 .navi:hover{
-  background-color: blue;
-  left:15vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color:white;
+  text-decoration: underline;
 }

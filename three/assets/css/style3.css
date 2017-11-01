@@ -3,13 +3,13 @@
 }
 
 body {
-  font-family: Helvetica,bold;
+  font-family: monospace;
   font-size: 10px;
   color:black;
   line-height: normal;
   background-color: #e3e6e7;
-  margin-left: 300px;
-  opacity: 1;
+  margin-left: 25vw;
+  opacity:1;
   transition: 1s;
 }
 
@@ -20,15 +20,25 @@ body.fade-out {
 
 /*----------------------------------*/
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:black;
+  text-decoration: underline;
+}
+
 .fixed{
-  font-size: 8vh;
-  color: orange;
   position: fixed;
   top:1vh;
   left:3vh;
 }
 
-
+.description{
+  position: fixed;
+}
 
 .title{
   font-family:arial;
@@ -44,11 +54,6 @@ body.fade-out {
   visibility: hidden;
 }
 /*effects*/
-
-img:hover {
-  width: 10%;
-  transition: 2s;
-}
 
 /*----------------------------------*/
 
@@ -74,17 +79,30 @@ img:hover {
   align-items:flex-end;
 }
 
-.col__1of3{
+.col__100{
+  flex:0 0 100%;
+}
+
+.col__33{
   flex:0 0 33.333%;
 }
 
-.col__2of3{
+.col__66{
   flex:0 0 66.666%;
 }
 
-.col__3of3{
+.col__50{
+  flex:0 0 50%;
+}
+
+.col__25{
   flex:0 0 25%;
 }
+
+.col__75{
+  flex:0 0 75%;
+}
+
 
 .content{
   padding:5px;
@@ -95,7 +113,18 @@ img:hover {
   width:100%;
 }
 /*----------------------------------*/
-
+.title{
+    position:fixed;
+    z-index:1000;
+    top:50%;
+    bottom:50%;
+    right:50%;
+    left:50%;
+    width:100px;
+    border-radius:5px;
+    background:red;
+}
+/*----------------------------------*/
 ::selection {
   background: white;
   /* WebKit/Blink Browsers */

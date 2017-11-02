@@ -3,9 +3,9 @@
 }
 
 body {
-  font-family: monospace;
-  font-size: 10px;
-  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color:#1e2841;
   line-height: normal;
   background-color: #e3e6e7;
   margin-left: 25vw;
@@ -36,6 +36,10 @@ a:hover{
   left:3vh;
 }
 
+img .fixed{
+  cursor:pointer;
+}
+
 .description{
   position: fixed;
 }
@@ -50,9 +54,7 @@ a:hover{
   font-size:70px;
 }
 
-.hidden{
-  visibility: hidden;
-}
+
 /*effects*/
 
 /*----------------------------------*/
@@ -111,6 +113,28 @@ a:hover{
 
 .content img{
   width:100%;
+
+}
+
+/*caption*/
+.caption span {
+  display: none;
+  position: fixed;
+  text-align: left;
+  left: 5vw;
+  right:5vw;
+  bottom: 3vh;
+  padding: 5px;
+  font-size: 3rem;
+}
+
+.thumb img{
+  cursor:pointer;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.thumb img:hover{
+  -webkit-transform: scale(1.01);
 }
 /*----------------------------------*/
 .title{

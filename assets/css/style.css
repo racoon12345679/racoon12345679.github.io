@@ -4,13 +4,73 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 30px;
+  color: white;
   line-height: normal;
-  background-color: #dddddd;
-  margin:2vh;
+  background-color: #dd7c6b;
+  margin:4vh;
   opacity:1;
   transition: 1s;
+  animation: colorchange 160s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 160s; /* Chrome and Safari */
 }
+
+.text{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+@keyframes colorchange
+{
+  0%   {background: #dd7c6b;}
+  5%   {background: #e5a80f;}
+  10%  {background: #689b56;}
+  15%  {background: #de8f3d;}
+  20%  {background: #689b56;}
+  25%  {background: #dd7c6b;}
+  30%  {background: #e5a80f;}
+  35%  {background: #dd8e3d;}
+  40%  {background: #de8f3d;}
+  45%  {background: #689b56;}
+  50%  {background: #e5a80f;}
+  55%  {background: #dd7c6b;}
+  60%  {background: #689b56;}
+  65%  {background: #de8f3d;}
+  70%  {background: #dd8e3d;}
+  75%  {background: #e5a80f;}
+  80%  {background: #689b56;}
+  85%  {background: #de8f3d;}
+  90%  {background: #689b56;}
+  95%  {background: #e5a80f;}
+  100% {background: #dd7c6b;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #dd7c6b;}
+  5%   {background: #e5a80f;}
+  10%  {background: #689b56;}
+  15%  {background: #de8f3d;}
+  20%  {background: #689b56;}
+  25%  {background: #dd7c6b;}
+  30%  {background: #e5a80f;}
+  35%  {background: #dd8e3d;}
+  40%  {background: #de8f3d;}
+  45%  {background: #689b56;}
+  50%  {background: #e5a80f;}
+  55%  {background: #dd7c6b;}
+  60%  {background: #689b56;}
+  65%  {background: #de8f3d;}
+  70%  {background: #dd8e3d;}
+  75%  {background: #e5a80f;}
+  80%  {background: #689b56;}
+  85%  {background: #de8f3d;}
+  90%  {background: #689b56;}
+  95%  {background: #e5a80f;}
+  100% {background: #dd7c6b;}
+}
+
 
 body.fade-out {
     opacity: 0;
@@ -18,34 +78,43 @@ body.fade-out {
 }
 
 .right {
+  color: white;
   font-size: 30px;
   position: fixed;
   align:right;
-  top:2vh;
+  top:4vh;
   right:4vh;
 }
 
-.navi{
+.webtitle{
   position: fixed;
-  top:2vh;
-  left:2vh;
+  font-size: 30px;
+  font-weight:900;
+  top:4vh;
+  left:4vh;
 }
 
+.wrapper{
+ margin: 4vh;
+ margin-top: 16vh;
+}
 
-
-.list{
- margin-top: 20vh;
+.foot{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   border-bottom: 1px dotted white;
 }
 
 a:hover{
 <<<<<<< HEAD
-  color:black;
+  color: white;
   border-bottom: 1px solid white;
   text-decoration: none;
 }
@@ -60,13 +129,42 @@ a:hover{
 >>>>>>> e19df173e0d227ed89b057e889c28a5d912fe763
 }
 
+img {
+  width:80%;
+  position: relative;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.align__bottom{
+  lign-items:center;
+}
+
+.col__3{
+  flex:0 0 50%;
+
+}
+
+.content{
+  padding:20px;
+  margin:10px;
+  background-color: white;
+}
+
+.content img{
+  width:100%;
+}
 
 
-/*img on hover b&w*/
+/*img on hover b&w*
 
     .thumbnailwrapper{
-      height:40vh;
-      width:70vw;
+      height:60vh;
+      width:80vw;
       overflow:hidden;
       cursor:pointer;
       margin-bottom: 2vh;
@@ -76,11 +174,11 @@ a:hover{
     }
 
     .thumbnailwrapper img {
-      width:100%;
+      width:80%;
       position: relative;
       /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
         filter: gray; /* IE5+ */
-        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary
         -webkit-transition: all .5s ease-in-out;
     }
 
@@ -90,42 +188,4 @@ a:hover{
       -webkit-transform: scale(1.01);
     }
 
-
-/*img on hover crossfade
-
-    #cf {
-      position:relative;
-      height:500px;
-      width:900px;
-      overflow:hidden;
-      cursor:pointer;
-    }
-
-    #cf img.top {
-      opacity:0;
-      transform: scale(1);
-    }
-    #cf img.bottom {
-      opacity:1;
-      transform: scale(1);
-    }
-    #cf:hover img.top {
-      opacity:1;
-      transform: scale(1);
-    }
-    #cf:hover img.bottom {
-      opacity:0;
-      transform: scale(1);
-    }
-
-
-    #cf img {
-      position:absolute;
-      -webkit-transition: opacity .4s ease-in;
-      -moz-transition: opacity .4s ease-in;
-      -o-transition: opacity .4s ease-in;
-      transition: all .4s ease-in;
-    }
-
-
-    */
+*/

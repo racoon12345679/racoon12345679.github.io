@@ -23,15 +23,15 @@ $(document).ready(function() {
     $('body').removeClass('fade-out');
 });
 
-/*hover title*/
-$('img.thumb').hover(
+/*hover title
+$('img.bottom').hover(
     function(){
         $(this).css('opacity','.5');
     },
     function(){
         $(this).css('opacity','1');
     }
-);
+);*/
 
 /* Every time the window is scrolled ... */
   $(window).scroll( function(){
@@ -52,6 +52,19 @@ $('img.thumb').hover(
       });
 
   });
+
+/*background move with mouseover
+
+  var pixelToMove = 0;
+  $("#background-image").mousemove(function(e) {
+    var width = $(this).innerWidth();
+    var height = $(this).innerHeight();
+    var newValueX = (e.pageX / width) * pixelToMove;
+    var newValueY = (e.pageY / height) * pixelToMove;
+    $(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
+  });
+
+  */
 
 
 });

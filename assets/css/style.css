@@ -12,7 +12,7 @@ header{
   background-color: #efa80f;
   background-size: cover;
   background-position: center;
-  height:60vh;
+  height:72vh;
   margin:-2vh;
   animation: colorchange 180s; /* animation-name followed by duration in seconds*/
      /* you could also use milliseconds (ms) or something like 2.5s */

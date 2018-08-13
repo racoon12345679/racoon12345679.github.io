@@ -9,10 +9,10 @@
 /*header*/
 
 header{
-  background-color: #efa80f;
+  background:url(https://c1.staticflickr.com/1/933/42202322530_9c1ef02040_b.jpg);
   background-size: cover;
   background-position: center;
-  height:72vh;
+  height:100vh;
   margin:-2vh;
   animation: colorchange 180s; /* animation-name followed by duration in seconds*/
      /* you could also use milliseconds (ms) or something like 2.5s */
@@ -21,51 +21,51 @@ header{
 
 @keyframes colorchange
 {
-  0%   {background: #ee7d6b;}
-  5%   {background: #efa80f;}
-  10%  {background: #539c57;}
-  15%  {background: #de8f3d;}
-  20%  {background: #539c57;}
-  25%  {background: #ee7d6b;}
-  30%  {background: #efa80f;}
-  35%  {background: #dd8e3d;}
-  40%  {background: #de8f3d;}
-  45%  {background: #539c57;}
-  50%  {background: #e5a80f;}
-  55%  {background: #ee7d6b;}
-  60%  {background: #539c57;}
-  65%  {background: #de8f3d;}
-  70%  {background: #dd8e3d;}
-  75%  {background: #efa80f;}
-  80%  {background: #539c57;}
-  85%  {background: #de8f3d;}
-  90%  {background: #539c57;}
-  95%  {background: #efa80f;}
-  100% {background: #ee7d6b;}
+  0%   {background: #0088a4;}
+  5%   {background: #e77a62;}
+  10%  {background: #f09a2d;}
+  15%  {background: #68933c;}
+  20%  {background: #0088a4;}
+  25%  {background: #e77a62;}
+  30%  {background: #f09a2d;}
+  35%  {background: #68933c;}
+  40%  {background: #0088a4;}
+  45%  {background: #e77a62;}
+  50%  {background: #f09a2d;}
+  55%  {background: #68933c;}
+  60%  {background: #0088a4;}
+  65%  {background: #e77a62;}
+  70%  {background: #f09a2d;}
+  75%  {background: #68933c;}
+  80%  {background: #0088a4;}
+  85%  {background: #e77a62;}
+  90%  {background: #f09a2d;}
+  95%  {background: #68933c;}
+  100% {background: #0088a4;}
 }
 
 @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{ 0%   {background: #ee7d6b;}
-  5%   {background: #efa80f;}
-  10%  {background: #539c57;}
-  15%  {background: #de8f3d;}
-  20%  {background: #539c57;}
-  25%  {background: #ee7d6b;}
-  30%  {background: #efa80f;}
-  35%  {background: #dd8e3d;}
-  40%  {background: #de8f3d;}
-  45%  {background: #539c57;}
-  50%  {background: #e5a80f;}
-  55%  {background: #ee7d6b;}
-  60%  {background: #539c57;}
-  65%  {background: #de8f3d;}
-  70%  {background: #dd8e3d;}
-  75%  {background: #efa80f;}
-  80%  {background: #539c57;}
-  85%  {background: #de8f3d;}
-  90%  {background: #539c57;}
-  95%  {background: #efa80f;}
-  100% {background: #ee7d6b;}
+{ 0%   {background: #0088a4;}
+  5%   {background: #e77a62;}
+  10%  {background: #f09a2d;}
+  15%  {background: #68933c;}
+  20%  {background: #0088a4;}
+  25%  {background: #e77a62;}
+  30%  {background: #f09a2d;}
+  35%  {background: #68933c;}
+  40%  {background: #0088a4;}
+  45%  {background: #e77a62;}
+  50%  {background: #f09a2d;}
+  55%  {background: #68933c;}
+  60%  {background: #0088a4;}
+  65%  {background: #e77a62;}
+  70%  {background: #f09a2d;}
+  75%  {background: #68933c;}
+  80%  {background: #0088a4;}
+  85%  {background: #e77a62;}
+  90%  {background: #f09a2d;}
+  95%  {background: #68933c;}
+  100% {background: #0088a4;}
 }
 
 
@@ -100,7 +100,7 @@ footer{
   color: #383838;
   text-align: left;
   font-family: 'Raleway', sans-serif;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 300;
   margin-top: 50vh;
   z-index: -1;
@@ -109,7 +109,7 @@ footer{
 .text{
   font-family: 'Raleway', sans-serif;
   color: #383838;
-  font-size: 16px;
+  font-size: 1rem;
   margin-right: 2vh;
 }
 
@@ -120,7 +120,7 @@ footer{
 .webtitle{
   color: #383838;
   position: fixed;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight:900;
   z-index: 1;
   top:2vh;
@@ -130,7 +130,7 @@ footer{
 
 .navigation {
   color: white;
-  font-size: 16px;
+  font-size: 1.2rem;
   position: fixed;
   align:right;
   z-index: 1;
@@ -186,6 +186,10 @@ img {
   position: relative;
 }
 
+.icon{
+  width:16vh;
+}
+
 .content{
   width: 31.5vw;
   height: 34vh;
@@ -198,7 +202,7 @@ img {
   padding-bottom: 2vh;
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-filter: grayscale(0.2); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .5s ease-in-out;
 }
 

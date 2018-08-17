@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-::selection{
-  color: #dddddd;
-  background-color: #383838;
+::selection {
+    color: #dddddd;
+    background-color: #383838;
 }
 
 /*header*/
@@ -76,7 +76,7 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #383838;
   line-height: normal;
-  background-color: #dddddd;
+  background-color: white;
   margin:2vh;
   opacity:1;
   transition: 1s;
@@ -247,3 +247,35 @@ section{
 }
 
 /*foto page click to show*/
+
+
+
+/*img on hover b&w*
+
+    .thumbnailwrapper{
+      height:60vh;
+      width:80vw;
+      overflow:hidden;
+      cursor:pointer;
+      margin-bottom: 2vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumbnailwrapper img {
+      width:80%;
+      position: relative;
+      /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary
+        -webkit-transition: all .5s ease-in-out;
+    }
+
+    .thumbnailwrapper img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+
+*/

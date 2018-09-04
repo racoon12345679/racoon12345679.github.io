@@ -15,11 +15,11 @@ header{
   background-position: center;
   height:100vh;
   margin:-2vh;
-  animation: colorchange 180s; /* animation-name followed by duration in seconds*/
-     /* you could also use milliseconds (ms) or something like 2.5s */
+  /*animation: colorchange 180s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s /
   -webkit-animation: colorchange 180s; /* Chrome and Safari */
 }
-
+/*
 @keyframes colorchange
 {
   0%   {background: #0088a4;}
@@ -46,7 +46,7 @@ header{
 }
 
 @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{ 0%   {background: #0088a4;}
+/*{ 0%   {background: #0088a4;}
   5%   {background: #e77a62;}
   10%  {background: #f09a2d;}
   15%  {background: #68933c;}
@@ -68,7 +68,7 @@ header{
   95%  {background: #68933c;}
   100% {background: #0088a4;}
 }
-
+*/
 
 /*body*/
 
